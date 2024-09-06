@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section with Slideshow Background -->
+    <section id="hero">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="https://thumbs.dreamstime.com/b/volunteering-charity-donating-concept-raised-white-hands-red-heart-blue-background-vector-design-element-illustration-186252591.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/008/575/634/non_2x/donation-boxes-background-free-vector.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvczkzLXBtLTI3NTcuanBn.jpg"
+            alt="Image 3"
+          />
+        </div>
+
+        <!-- Navigation Arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="hero-content">
+        <h1>Welcome to Our Donation Platform</h1>
+        <p>Your contribution can make a difference</p>
+      </div>
+
+      <!-- Dots for Slideshow -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+    <!-- Main Page Content -->
+    <section id="about-our-work">
+      <div class="container">
+        <h2>Are you InNeed?</h2>
+        <p>
+          We have helped over 50+ communities and are still growing strong. Your
+          contribution matters, and together, we can do more.
+        </p>
+
+        <div class="info-box">
+            <section id="services">
+                <h2>Our Services</h2>
+                <!-- Image for Our Services -->
+                <div class="services-content">
+                    <img src="https://tuavance.com/wp-content/uploads/2020/11/blog-13.jpg" alt="Services Image" class="services-img">
+                    <p>
+                        We provide essential services to help refugees find shelter, medical aid, food, and more.
+                        To know more about our services and how we can help, please reach out to us or explore further.
+                    </p>
+                </div>
+                
+                <!-- "Are you in need?" Button -->
+                <a href="need-help.html" class="btn btn-need">Are you in need?</a>
+            </section>
+            
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are dedicated to [cause details]. Our mission is to help [target
+        audience].
+      </p>
+    </section>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

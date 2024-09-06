@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Help - InNeed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="need-help.html">Get Help</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="services.html">Our Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="get-help">
+      <h1>Are you a Refugee?</h1>
+      <div class="help-content">
+        <div class="image-container">
+          <img
+            src="https://www.amnesty.org/en/wp-content/uploads/2022/06/GettyImages-1234978701-1444x710.jpg"
+            alt="Refugee Image"
+          />
+        </div>
+        <div class="form-container">
+          <h2>Register</h2>
+          <form action="#" method="POST">
+            <label for="fullName">Full Name*</label>
+            <input type="text" id="fullName" name="fullName" required />
+
+            <label for="age">Age*</label>
+            <input type="number" id="age" name="age" required />
+
+            <label for="gender">Gender*</label>
+            <select id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="country">Country of Origin*</label>
+            <input type="text" id="country" name="country" required />
+
+            <label for="mobile">Mobile Number*</label>
+            <input type="tel" id="mobile" name="mobile" required />
+
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="residence">Current Place of Residence</label>
+            <input type="text" id="residence" name="residence" />
+
+            <label for="reason">Reason for leaving the country</label>
+            <textarea id="reason" name="reason" rows="4"></textarea>
+
+            <button type="submit">Proceed</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 InNeed. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

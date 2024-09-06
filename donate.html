@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function validateDonationForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const amount = document.getElementById("amount").value;
+
+        if (!name || !email || !amount || amount <= 0) {
+          alert("Please fill out all fields correctly.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Donation Section -->
+    <section id="donate">
+      <h2>Support Our Cause</h2>
+      <p>
+        Your generosity helps us continue our mission and make a meaningful
+        impact in the community. We are dedicated to [specific cause or
+        mission], and every contribution, no matter how small, plays a crucial
+        role in helping us achieve our goals. Your support enables us to provide
+        essential resources and make a positive difference in the lives of those
+        in need.
+      </p>
+      <p>
+        By donating, you are not just giving money; you are investing in a
+        brighter future for those we serve. We are grateful for every donation
+        and pledge to use your contributions responsibly to maximize their
+        impact.
+      </p>
+      <p>
+        Please fill out the form below to make your donation. If you have any
+        questions or need assistance, feel free to contact us. Thank you for
+        your support!
+      </p>
+
+      <!-- Donation Form -->
+      <form
+        action="submit_donation.php"
+        method="POST"
+        onsubmit="return validateDonationForm()"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="amount">Donation Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required />
+
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+  </body>
+</html>
